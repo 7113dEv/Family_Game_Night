@@ -1,5 +1,7 @@
 from Settings import *
 
+defaultSettings = Settings(autoPlay=True, soundEffects=True).showSettings()
+
 
 class playerProfile:
     def __init__(player, name, avatar, favGame, gameStats, gameHistory, friends, settings):
@@ -21,7 +23,6 @@ class playerProfile:
               "\n" + str(player.name) + "'s Settings: " + str(player.settings))
 
 
-defaultSettings = Settings(autoPlay=True, soundEffects=True).showSettings()
 p1 = playerProfile("Gio", "Default Photo", "Spades", "[Insert Game Statistics]",
                    "[Insert Game History]", "[Insert Friends List]", defaultSettings)
 
